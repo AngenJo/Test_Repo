@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Circle?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="frontend.IOPortController"
+            prefHeight="300.0" prefWidth="240.0">
+
+    <Label alignment="CENTER" prefHeight="20.0" prefWidth="240.0" text="PORTA Input/Output">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font></Label>
+
+    <Label alignment="CENTER" layoutY="20.0" prefHeight="20.0" prefWidth="30.0" text="RA4" />
+    <Label alignment="CENTER" layoutX="30.0" layoutY="20.0" prefHeight="20.0" prefWidth="30.0" text="RA3" />
+    <Label alignment="CENTER" layoutX="60.0" layoutY="20.0" prefHeight="20.0" prefWidth="30.0" text="RA2" />
+    <Label alignment="CENTER" layoutX="90.0" layoutY="20.0" prefHeight="20.0" prefWidth="30.0" text="RA1" />
+    <Label alignment="CENTER" layoutX="120.0" layoutY="20.0" prefHeight="20.0" prefWidth="30.0" text="RA0" />
+
+    <Label fx:id="trisA4" alignment="CENTER" layoutY="40.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisA3" alignment="CENTER" layoutX="30.0" layoutY="40.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisA2" alignment="CENTER" layoutX="60.0" layoutY="40.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisA1" alignment="CENTER" layoutX="90.0" layoutY="40.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisA0" alignment="CENTER" layoutX="120.0" layoutY="40.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+
+    <Label fx:id="portA4" alignment="CENTER" layoutY="60.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portA3" alignment="CENTER" layoutX="30.0" layoutY="60.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portA2" alignment="CENTER" layoutX="60.0" layoutY="60.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portA1" alignment="CENTER" layoutX="90.0" layoutY="60.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portA0" alignment="CENTER" layoutX="120.0" layoutY="60.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+
+    <Label alignment="CENTER" layoutY="100.0" prefHeight="20.0" prefWidth="240.0" text="PORTB Input/Output">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font></Label>
+
+    <Label alignment="CENTER" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB7" />
+    <Label alignment="CENTER" layoutX="30.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB6" />
+    <Label alignment="CENTER" layoutX="60.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB5" />
+    <Label alignment="CENTER" layoutX="90.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB4" />
+    <Label alignment="CENTER" layoutX="120.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB3" />
+    <Label alignment="CENTER" layoutX="150.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB2" />
+    <Label alignment="CENTER" layoutX="180.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB1" />
+    <Label alignment="CENTER" layoutX="210.0" layoutY="120.0" prefHeight="20.0" prefWidth="30.0" text="RB0" />
+
+    <Label fx:id="trisB7" alignment="CENTER" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB6" alignment="CENTER" layoutX="30.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB5" alignment="CENTER" layoutX="60.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB4" alignment="CENTER" layoutX="90.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB3" alignment="CENTER" layoutX="120.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB2" alignment="CENTER" layoutX="150.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB1" alignment="CENTER" layoutX="180.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+    <Label fx:id="trisB0" alignment="CENTER" layoutX="210.0" layoutY="140.0" prefHeight="20.0" prefWidth="30.0" text="IN" />
+
+    <Label fx:id="portB7" alignment="CENTER" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB6" alignment="CENTER" layoutX="30.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB5" alignment="CENTER" layoutX="60.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB4" alignment="CENTER" layoutX="90.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB3" alignment="CENTER" layoutX="120.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB2" alignment="CENTER" layoutX="150.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB1" alignment="CENTER" layoutX="180.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+    <Label fx:id="portB0" alignment="CENTER" layoutX="210.0" layoutY="160.0" prefHeight="20.0" prefWidth="30.0" text="0" />
+
+    <Circle fx:id="ledB7" centerX="15.0" fill="#ff1f1f" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB6" centerX="15.0" fill="#ff1f1f" layoutX="30.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB5" centerX="15.0" fill="#ff1f1f" layoutX="60.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB4" centerX="15.0" fill="#ff1f1f" layoutX="90.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB3" centerX="15.0" fill="#ff1f1f" layoutX="120.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB2" centerX="15.0" fill="#ff1f1f" layoutX="150.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB1" centerX="15.0" fill="#ff1f1f" layoutX="180.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="ledB0" centerX="15.0" fill="#ff1f1f" layoutX="210.0" layoutY="240.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+
+    <Label alignment="CENTER" layoutY="200.0" prefHeight="20.0" prefWidth="240.0" text="LED Array">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+</AnchorPane>

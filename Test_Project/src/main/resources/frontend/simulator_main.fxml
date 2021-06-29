@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.SimulatorMainController">
+   <SplitPane dividerPositions="0.4" prefHeight="800.0" prefWidth="1500.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+               <TabPane prefHeight="750.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                   <Tab text="Function Registers, I/O Ports, and Stack">
+                       <AnchorPane>
+                           <fx:include fx:id="register" layoutX="0.0" source="sim_registers.fxml" />
+                           <fx:include fx:id="ioPort" layoutX="350.0" layoutY="30.0" source="sim_ioports.fxml" />
+                           <fx:include fx:id="stack" layoutX="370.0" layoutY="330.0" source="sim_stack.fxml" />
+                        <Separator layoutX="335.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="0.0" />
+                       </AnchorPane>
+                   </Tab>
+                   <Tab text="General Memory Registers">
+                       <AnchorPane>
+                           <fx:include fx:id="memory" layoutY="20.0" source="sim_memory.fxml" />
+                       </AnchorPane>
+                   </Tab>
+               </TabPane>
+            </children>
+         </AnchorPane>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <AnchorPane layoutX="20.0" layoutY="30.0" prefHeight="750.0" prefWidth="860.0">
+                   <Button fx:id="stepButton" layoutX="760.0" mnemonicParsing="false" onAction="#doStep" prefHeight="20.0" prefWidth="100.0" text="Step" />
+                   <Button fx:id="runButton" layoutX="760.0" layoutY="30.0" mnemonicParsing="false" onAction="#doRun" prefHeight="20.0" prefWidth="100.0" text="Run" />
+                   <ListView id="codeView" fx:id="codeView" prefHeight="750.0" prefWidth="750.0" stylesheets="@config.css" />
+                   <Button fx:id="loadButton" layoutX="760.0" layoutY="225.0" mnemonicParsing="false" onAction="#loadListing" prefHeight="20.0" prefWidth="100.0" text="Load" />
+                  <Button fx:id="ffwdToBreakpointButton" layoutX="760.0" layoutY="60.0" mnemonicParsing="false" onAction="#doFFWDToBreakpoint" prefHeight="20.0" prefWidth="100.0" text="To Breakpoint" />
+                  <Label alignment="CENTER" layoutX="760.0" layoutY="289.0" prefWidth="100.0" text="Runtime">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="runtimeLabel" alignment="CENTER_RIGHT" layoutX="760.0" layoutY="310.0" prefWidth="50.0" text="0.0" />
+                  <Label layoutX="810.0" layoutY="310.0" prefWidth="50.0" text=" µs" />
+                  <Button fx:id="resetButton" layoutX="760.0" layoutY="90.0" mnemonicParsing="false" onAction="#doReset" prefHeight="20.0" prefWidth="100.0" text="Reset" />
+                </AnchorPane>
+               <Label alignment="CENTER" layoutX="20.0" prefHeight="30.0" prefWidth="860.0" text="Program Execution">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+     </items>
+   </SplitPane>
+</AnchorPane>

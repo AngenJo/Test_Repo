@@ -1,0 +1,12 @@
+#stackView .list-cell {
+    -fx-alignment: center;
+    -fx-cell-size: 24.7px;
+}
+
+#codeView .list-cell {
+    -fx-font-family: monospace;
+}
+
+#codeView .list-cell:breakpoint {
+    -fx-background-color: #FF0000;
+}

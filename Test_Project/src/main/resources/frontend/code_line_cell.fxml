@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="10.0" />
+        <ColumnConstraints halignment="LEFT"/>
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" valignment="CENTER" />
+    </rowConstraints>
+    <children>
+      <Label fx:id="activeIndicator" GridPane.columnIndex="1" />
+      <Label fx:id="codeLineContent" text="CODE GOES HERE" GridPane.columnIndex="2" />
+    </children>
+</GridPane>
